@@ -1,18 +1,17 @@
 const http =require('http');
-const url=require('url')
+const url=require('url');
 const fs=require('fs');
-const { json } = require('stream/consumers');
+// const { json } = require('stream/consumers');
 
 const server = http.createServer((req,res)=>{
-    pathname=req.url
     fs.readFile('./data.json','utf-8',(err,data)=>{
-        const productData=JSON.parse(data);
-        console.log(productData);
+        const ProductData=JSON.parse(data);
+        console.log(ProductData);
+        res.end(data) 
         res.writeHead(200,{
-            'Content-type':'application/json'
-        });
-        res.end(data);
-    })
+            'Content-type':'appliction/json'
+        })
+    });
    
 })
 
