@@ -1,0 +1,123 @@
+[
+    {
+      "name": "Apple",
+      "color": "Red",
+      "taste": "Sweet",
+      "origin": "Central Asia",
+      "description": "A crisp and juicy fruit that is rich in fiber and antioxidants.",
+      "nutrients": {
+        "vitaminC": "7%",
+        "fiber": "4g",
+        "calories": "95"
+      }
+    },
+    {
+      "name": "Banana",
+      "color": "Yellow",
+      "taste": "Sweet",
+      "origin": "Southeast Asia",
+      "description": "A soft and creamy fruit that is a great source of quick energy.",
+      "nutrients": {
+        "vitaminB6": "22%",
+        "potassium": "422mg",
+        "calories": "105"
+      }
+    },
+    {
+      "name": "Orange",
+      "color": "Orange",
+      "taste": "Citrus",
+      "origin": "China",
+      "description": "A tangy and refreshing fruit packed with vitamin C.",
+      "nutrients": {
+        "vitaminC": "92%",
+        "fiber": "3g",
+        "calories": "62"
+      }
+    },
+    {
+      "name": "Mango",
+      "color": "Yellow",
+      "taste": "Sweet",
+      "origin": "South Asia",
+      "description": "A tropical fruit known for its juicy and flavorful flesh.",
+      "nutrients": {
+        "vitaminA": "20%",
+        "vitaminC": "67%",
+        "calories": "99"
+      }
+    },
+    {
+      "name": "Strawberry",
+      "color": "Red",
+      "taste": "Sweet",
+      "origin": "Temperate Regions",
+      "description": "A small, red fruit with a juicy texture and natural sweetness.",
+      "nutrients": {
+        "vitaminC": "97%",
+        "fiber": "3g",
+        "calories": "32"
+      }
+    },
+    {
+      "name": "Watermelon",
+      "color": "Green",
+      "taste": "Sweet",
+      "origin": "Southern Africa",
+      "description": "A refreshing and hydrating fruit with a high water content.",
+      "nutrients": {
+        "vitaminA": "11%",
+        "vitaminC": "13%",
+        "calories": "46"
+      }
+    },
+    {
+      "name": "Pineapple",
+      "color": "Brown",
+      "taste": "Sweet and Tart",
+      "origin": "South America",
+      "description": "A tropical fruit known for its vibrant taste and health benefits.",
+      "nutrients": {
+        "vitaminC": "131%",
+        "manganese": "76%",
+        "calories": "82"
+      }
+    },
+    {
+      "name": "Kiwi",
+      "color": "Brown",
+      "taste": "Sweet and Tangy",
+      "origin": "China",
+      "description": "A small, fuzzy fruit with bright green flesh and black seeds.",
+      "nutrients": {
+        "vitaminC": "154%",
+        "fiber": "2g",
+        "calories": "42"
+      }
+    },
+    {
+      "name": "Grapes",
+      "color": "Purple",
+      "taste": "Sweet",
+      "origin": "Near East",
+      "description": "Small, juicy fruits often used for making wine or eaten fresh.",
+      "nutrients": {
+        "vitaminC": "4%",
+        "vitaminK": "18%",
+        "calories": "62"
+      }
+    },
+    {
+      "name": "Lemon",
+      "color": "Yellow",
+      "taste": "Sour",
+      "origin": "South Asia",
+      "description": "A citrus fruit widely used for its juice and zest in cooking.",
+      "nutrients": {
+        "vitaminC": "89%",
+        "fiber": "2g",
+        "calories": "17"
+      }
+    }
+  ]
+  
