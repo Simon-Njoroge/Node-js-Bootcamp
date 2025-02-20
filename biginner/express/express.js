@@ -12,35 +12,48 @@ const users = JSON.parse(fs.readFileSync("./data.json"));
 
 app.use(express.json()); //middleware
 
-app.get("/api/v1/users", (req, res) => {
+// creating our own middleware
+
+app.use((req, res, next) => {
+  console.log("hello from the middleware");
+  next();
+});
+
+//code refactoring
+const getusers = (req, res) => {
   res.status(200).json({
     status: "success",
     data: {
       users,
     },
   });
-});
+};
+// app.get("/api/v1/users",getusers);
+app.route("/api/v1/users").get(getusers);
 
-app.get("/api/v1/users/:id", (req, res) => {
+//handling get request
+const getuserbyid = (req, res) => {
   console.log(req.params);
   const id = req.params.id * 1;
   const user = users.find((el) => el.id === id);
 
-  if (id > users.length ) {
+  if (id > users.length) {
     return res.status(404).json({
       status: "fail",
       message: "invalid id",
     });
+  } else {
+    res.status(200).json({
+      status: "success",
+      data: {
+        user,
+      },
+    });
   }
-  else{
-  res.status(200).json({
-    status: "success",
-    data: {
-      user,
-    },
-  })};
-});
+};
+app.get("/api/v1/users/:id", getuserbyid);
 
+//handling post request
 app.post("/api/v1/users", (req, res) => {
   console.log(req.body);
   const newid = users[users.length - 1].id + 1;
@@ -55,6 +68,22 @@ app.post("/api/v1/users", (req, res) => {
         user: newuser,
       },
     });
+  });
+});
+
+//handling update using patch
+app.patch("/api/v1/users/:id", (req, res) => {
+  res.status(200).json({
+    status: "success",
+    tour: "ipdated tour here",
+  });
+});
+
+//handling delete
+app.delete("/api/v1/users/:id", (req, res) => {
+  res.status(204).json({
+    status: "success",
+    data: "null",
   });
 });
 
