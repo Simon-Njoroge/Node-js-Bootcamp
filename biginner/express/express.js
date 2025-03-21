@@ -29,8 +29,9 @@ const getusers = (req, res) => {
   });
 };
 // app.get("/api/v1/users",getusers);
-app.route("/api/v1/users").get(getusers);
+// app.route("/api/v1/users").get(getusers);
 
+// app.route('/api/v1/users2').get(getusers)
 //handling get request
 const getuserbyid = (req, res) => {
   console.log(req.params);
@@ -86,6 +87,12 @@ app.delete("/api/v1/users/:id", (req, res) => {
     data: "null",
   });
 });
+
+const usersrouter = express.Router();
+usersrouter.route("/").get(getusers);
+
+
+app.use("/api/v1/users", usersrouter);
 
 const port = 8000;
 
